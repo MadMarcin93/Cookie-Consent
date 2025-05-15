@@ -1,0 +1,73 @@
+@import url("https://fonts.google.com/?selected=Material+Symbols+Outlined:cookie:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e3e3e3");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-color: rgba(106, 106, 106, 0.786);
+}
+.wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: -420px;
+  max-width: 345px;
+  width: 100%;
+  background-color: rgb(127, 127, 202);
+  border-radius: 15px;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+}
+.wrapper.show {
+  right: 20px;
+}
+.wrapper header {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding: 8px;
+}
+header i {
+  color: rgb(242, 240, 240);
+}
+header h2 {
+  color: rgb(242, 240, 240);
+  font-weight: 500;
+  font-size: 22px;
+}
+.wrapper .data p {
+  color: rgb(249, 208, 122);
+  font-size: 16px;
+  padding: 5px;
+}
+.data p a {
+  color: rgb(242, 240, 240);
+  text-decoration: none;
+}
+.data p a:hover {
+  text-decoration: underline;
+}
+.wrapper .buttons {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons .button {
+  width: calc(100% / 2 - 10px);
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgba(106, 106, 106, 0.786);
+  color: white;
+  font-size: 15px;
+  border: none;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  background-color: rgb(87, 87, 87);
+  cursor: pointer;
+}
